@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="Madoko, version 1.1.6" />
+  <meta name="viewport" content="initial-scale=1.0" />
+  <meta name="author" content="王鹏" />
+  <title>毕业设计中期报告</title>
+  <style type="text/css"  class="link">
+  /*# sourceURL=madoko.css */
+  
+  .madoko .toc>.tocblock .tocblock .tocblock {
+    margin-left: 2.25em;
+  }
+  .madoko .toc>.tocblock .tocblock {
+    margin-left: 1.5em;
+  }
+  .madoko .toc-contents>.tocblock>.tocitem {
+    font-weight: bold;
+  }
+  .madoko .toc {
+    margin-top: 1em;
+  }
+  .madoko p.para-continue {
+    margin-bottom: 0pt;
+  }
+  .madoko .para-block+p {
+    margin-top: 0pt;
+  }
+  .madoko ul.para-block, .madoko ol.para-block {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+  }
+  .madoko ul.para-end, .madoko ol.para-end {
+    margin-bottom: 1em;
+  }
+  .madoko dl {
+    margin-left: 0em;
+  }
+  .madoko blockquote {
+    font-style: italic;
+  }
+  .madoko a.localref {
+    text-decoration: none;
+  }
+  .madoko a.localref:hover {
+    text-decoration: underline;
+  }
+  .madoko .footnotes {
+    font-size: smaller;
+    margin-top: 2em;
+  }
+  .madoko .footnotes hr {
+    width: 50%;
+    text-align: left;
+  }
+  .madoko .footnote { 
+    margin-left: 1em;
+  }
+  .madoko .footnote-before {
+    margin-left: -1em;
+    width: 1em;
+    display: inline-block;
+  }
+  .madoko .align-center, .madoko .align-center>p {
+    text-align: center !important;
+  }
+  .madoko .align-center pre {
+    text-align: left;
+  }
+  .madoko .align-center>* {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .madoko .align-left, .madoko .align-left>p {
+    text-align: left !important;
+  }
+  .madoko .align-left>* {
+    margin-left: 0pt !important;
+    margin-right: auto !important;
+  }
+  .madoko .align-right, .madoko .align-right>p {
+    text-align: right !important;
+  }
+  .madoko .align-right>* {
+    margin-left: auto !important;
+    margin-right: 0pt !important;
+  }
+  .madoko .align-center>table,
+  .madoko .align-left>table,
+  .madoko .align-right>table {
+    text-align: left !important;
+  }
+  .madoko .equation-before {
+    float: right;
+  }
+  .madoko .bibitem {
+    font-size: smaller;
+  }
+  .madoko .bibsearch {
+    font-size: x-small;
+    text-decoration:none;
+    color: black;
+    font-family: "Segoe UI Symbol", Symbola, serif;
+  }
+  .madoko .block, .madoko .figure, .madoko .bibitem, .madoko .equation, .madoko div.math {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+  }
+  .madoko .figure {
+    padding: 0.5em;
+    margin-left: 0pt;
+    margin-right: 0pt;
+  }
+  .madoko .hidden {
+    display: none;
+  }
+  .madoko .invisible {
+    visibility: hidden;
+  }
+  .madoko.preview .invisible {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  .madoko code.code, .madoko span.code {
+    white-space: pre-wrap;
+  }
+  .madoko hr, hr.madoko {
+    border: none;
+    border-bottom: black solid 1px;
+    margin-bottom: 0.5ex;
+  }
+  .madoko .framed>*:first-child {
+    margin-top: 0pt;
+  }
+  .madoko .framed>*:last-child {
+    margin-bottom: 0pt;
+  }
+  .madoko ul.list-style-type-dash {
+      list-style-type: none !important;
+  }
+  .madoko ul.list-style-type-dash > li:before {
+      content: "\2013"; 
+      position: absolute;
+      margin-left: -1em; 
+  }
+  .madoko table.madoko {
+    border-collapse: collapse;
+  }
+  .madoko td, .madoko th {
+    padding: 0ex 0.5ex;
+    margin: 0pt;
+    vertical-align: top;
+  }
+  .madoko .cell-border-left {
+    border-left: 1px solid black;
+  }
+  .madoko .cell-border-right {
+    border-right: 1px solid black;
+  }
+  .madoko thead>tr:first-child>.cell-line,
+  .madoko tbody:first-child>tr:first-child>.cell-line {
+    border-top: 1px solid black;
+    border-bottom: none;
+  }
+  .madoko .cell-line, .madoko .cell-double-line {
+    border-bottom: 1px solid black;
+    border-top: none;
+  }
+  .madoko .cell-double-line {
+    border-top: 1px solid black;
+    padding-top: 1.5px !important;
+  }
+  .madoko .input-mathpre .MathJax_Display {
+    text-align: left !important;
+  }
+  .madoko div.input-mathpre {
+    text-align: left;
+    margin-top: 1.5ex;
+    margin-bottom: 1ex;
+  }
+  .madoko .math-rendering {
+    text-align: left;
+    white-space: pre;
+    color: gray;
+  }
+  .madoko .mathdisplay {
+    text-align: center;
+  }
+  .madoko .pretty table {
+    border-collapse: collapse;
+  }
+  .madoko .pretty td {
+    padding: 0em;
+  }
+  .madoko .pretty td.empty {
+    min-width: 1.5ex;
+  }
+  .madoko .pretty td.expander {
+    width: 100em;
+  }
+  body.madoko, .madoko .serif {
+    font-family: Cambria,"Times New Roman","Liberation Serif","Times",serif;
+  }
+  .madoko .sans-serif {
+    font-family: "Calibri", "Optima", sans-serif;
+  }
+  .madoko .symbol {
+    font-family: "Segoe UI Symbol", Symbola, serif;
+  }
+  body.madoko {  
+    -webkit-text-size-adjust: 100%;       
+    text-rendering: optimizeLegibility;
+  }
+  body.madoko {
+    max-width: 88ex; 
+    margin: 1em auto;
+    padding: 0em 2em;  
+  }
+  body.preview.madoko {
+    padding: 0em 1em;
+  }
+  .madoko p {
+    text-align: justify;
+  }
+  .madoko h1, .madoko h2, .madoko h3, .madoko h4 { 
+    margin-top: 1.22em; 
+    margin-bottom: 1ex;
+  }
+  .madoko h1+p, .madoko h2+p, .madoko h3+p, .madoko h4+p, .madoko h5+p  { 
+    margin-top: 1ex;    
+  }
+  .madoko h5, .madoko h6 { 
+    margin-top: 1ex;
+    font-size: 1em;
+  }
+  .madoko h5 { 
+    margin-bottom: 0.5ex;
+  }
+  .madoko h5 + p {
+    margin-top: 0.5ex;
+  }
+  .madoko h6 { 
+    margin-bottom: 0pt;
+  }
+  .madoko h6 + p {
+    margin-top: 0pt;
+  }
+  .madoko pre, .madoko code, .madoko kbd, .madoko samp, .madoko tt, 
+  .madoko .monospace, .madoko .token-indent, .madoko .reveal pre, .madoko .reveal code, .madoko .email {
+    font-family: Consolas,"Andale Mono WT","Andale Mono",Lucida Console,Monaco,monospace,monospace;
+    font-size: 0.85em;
+  }
+  .madoko pre code, .madoko .token-indent {
+    font-size: 0.95em;
+  }
+  .madoko pre code {
+    font-family: inherit !important;
+  }
+  .madoko ol.linenums li {
+    background-color: white;
+    list-style-type: decimal;
+  }
+  .madoko .remote {
+    background-color: #F0FFF0;
+  }
+  .madoko .remote + * {
+    margin-top: 0pt;
+  }
+  @media print {
+    body.madoko {
+      font-size: 10pt;
+    }
+    @page {
+      margin: 1in 1.5in;
+    }
+  }
+  @media only screen and (max-device-width:1024px) {
+    body.madoko {
+      padding: 0em 0.5em;    
+    }
+    .madoko li {
+      text-align: left;
+    }
+  }
+  
+    </style>
+  
+  </head>
+<body class="madoko">
+
+<div class="body madoko" style="line-adjust:0">
+
+<div class="titleblock align-center para-block" style="text-align:center;line-adjust:0">
+<div class="titleheader align-center" style="text-align:center;line-adjust:0">
+<div class="title para-block" style="font-size:xx-large;font-weight:bold;margin-bottom:0.5ex;line-adjust:0">毕业设计中期报告</div></div>
+<div class="authors align-center" style="text-align:center;width:80%;line-adjust:0"><table class="authorrow columns block" style="margin-top:2ex;width:100%;line-adjust:0">
+<tbody><tr><td class="author column" style="text-align:center;line-adjust:0">
+<div class="authorname" style="font-size:large;line-adjust:0">王鹏</div></td></tr></tbody></table></div></div><span data-line=""></span>
+<nav class="toc toc-contents"><h2 id="sec-contents" class="clearnum h1 heading-contents" data-heading-depth="1" style="display:block">Contents</h2>
+<div class="tocblock tocblock1">
+<div class="tocitem tocitem1" data-toc-target-elem="h1" data-toc-target="section" data-toc-depth="1" data-toc-line="[1]{.heading-label}.&#8194;\u6BD5\u4E1A\u8BBE\u8BA1\u7684\u8FDB\u5C55\u60C5\u51B5" style="toctarget:section"><a href="#section" class="localref"><a href="https://thumbnail0.baidupcs.com/thumbnail/f02b7acf9eacccf1f1a1ffe2d5342731?fid=1565824282-250528-386983524419156&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HWOZIs4%2FgeGAHMJG5oAYQPNvVmc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1944127573691134508&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="1" class="heading-label">1</a>.&#8194;毕业设计的进展情况</a></div>
+<div class="tocblock tocblock2">
+<div class="tocitem tocitem2" data-toc-target-elem="h2" data-toc-target="section" data-toc-depth="2" data-toc-line="[1.1]{.heading-label}.&#8194;\u8BFE\u9898\u5B8C\u6210\u60C5\u51B5" style="toctarget:section"><a href="#section" class="localref"><span class="heading-label">1.1</span>.&#8194;课题完成情况</a></div>
+<div class="tocitem tocitem2" data-toc-target-elem="h2" data-toc-target="section" data-toc-depth="2" data-toc-line="[1.2]{.heading-label}.&#8194;\u89E3\u51B3\u590D\u6742\u5DE5\u7A0B\u95EE\u9898\u60C5\u51B5" style="toctarget:section"><a href="#section" class="localref"><span class="heading-label">1.2</span>.&#8194;解决复杂工程问题情况</a></div></div>
+<div class="tocitem tocitem1" data-toc-target-elem="h1" data-toc-target="section" data-toc-depth="1" data-toc-line="[2]{.heading-label}.&#8194;\u5B58\u5728\u95EE\u9898\u4E0E\u89E3\u51B3\u65B9\u6848" style="toctarget:section"><a href="#section" class="localref"><a href="https://thumbnail0.baidupcs.com/thumbnail/d2a7e6bc47ddbee5b905f6737b6fafd5?fid=1565824282-250528-455106901933423&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8lC%2Briz8FLY6AOMwXPpEqdzHrZc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943732916945143251&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="2" class="heading-label">2</a>.&#8194;存在问题与解决方案</a></div>
+<div class="tocblock tocblock2">
+<div class="tocitem tocitem2" data-toc-target-elem="h2" data-toc-target="section" data-toc-depth="2" data-toc-line="[2.1]{.heading-label}.&#8194;\u5B58\u5728\u7684\u4E3B\u8981\u95EE\u9898" style="toctarget:section"><a href="#section" class="localref"><span class="heading-label">2.1</span>.&#8194;存在的主要问题</a></div></div>
+<div class="tocitem tocitem1" data-toc-target-elem="h1" data-toc-target="section" data-toc-depth="1" data-toc-line="[3]{.heading-label}.&#8194;\u4E0B\u4E00\u6B65\u8BA1\u5212" style="toctarget:section"><a href="#section" class="localref"><a href="https://thumbnail0.baidupcs.com/thumbnail/486bd77e4df82bffa5ff9ee27bc1cdf6?fid=1565824282-250528-588930035273099&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-egyxTNPO3YAOpKBcqdgIkJoOKA4=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943754308764616556&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="3" class="heading-label">3</a>.&#8194;下一步计划</a></div></div></nav>
+<hr  class="madoko" style="display:block">
+<h2 id="section" class="h1" data-heading-depth="1" style="display:block"><span class="heading-before"><a href="https://thumbnail0.baidupcs.com/thumbnail/f02b7acf9eacccf1f1a1ffe2d5342731?fid=1565824282-250528-386983524419156&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HWOZIs4%2FgeGAHMJG5oAYQPNvVmc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1944127573691134508&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="1" class="heading-label">1</a>.&#8194;</span>毕业设计的进展情况</h2><h3 id="section" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">1.1</span>.&#8194;</span>课题完成情况</h3>
+<p class="p noindent">首先我尝试了SIGGRAPH 2017年的一篇文章: Globally and Locally Consistent Image Completion(以下简称GL)。
+这篇文章是由早稻田大学(Waseda University)的Satoshi Iizuka等人发表的，他们并没有公布源代码以及训练模型。
+我自己按照他们的文章实现后，发现效果并不理想，但这一点和我的训练数据以及GAN模型本身的不稳定性有很大关系，
+也有可能我的实现方法有问题。但是基于他们的思路以及DCGAN原本代码重新修改后，我得到了一个可以继续训练的模型。
+GL这篇文章完全以卷积网络作为基础，遵循GAN的思路，设计两部分网络，一部分用于生成图像，一部分用于鉴别生成图像是否与原图片一致。
+生成图片部分，GL采用12层卷积网络对原始图片(去除需要进行填充的部分)进行encoding，得到一张原图16分之一大小的网格。
+然后再对该网格采用4层卷积网络进行decoding，从而得到复原图像。
+鉴别器也被分为两个部分，一个全局鉴别器(Global Discriminator)以及一个局部鉴别器(Local Discriminator)。
+全局鉴别器将完整图像作为输入，识别场景的全局一致性，而局部鉴别器仅在以填充区域为中心的原图像4分之一大小区域上观测，识别局部一致性。
+</p>
+<p class="p indent"><img src="https://thumbnail0.baidupcs.com/thumbnail/f02b7acf9eacccf1f1a1ffe2d5342731?fid=1565824282-250528-386983524419156&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HWOZIs4%2FgeGAHMJG5oAYQPNvVmc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1944127573691134508&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/f02b7acf9eacccf1f1a1ffe2d5342731?fid=1565824282-250528-386983524419156&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HWOZIs4%2FgeGAHMJG5oAYQPNvVmc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1944127573691134508&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="1">
+</p>
+<p class="p indent">通过采用两个不同的鉴别器，使得最终网络不但可以使全局观测一致，并且能够优化其细节，最终产生更好的图片填充效果。
+##知识学习情况
+###<strong class="strong-star2">填充网络</strong>
+具体到其填充网络部分，是完全基于卷积网络的。原文中给出的卷积网络设置如下：
+</p>
+<p class="p indent"><img src="https://thumbnail0.baidupcs.com/thumbnail/d2a7e6bc47ddbee5b905f6737b6fafd5?fid=1565824282-250528-455106901933423&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8lC%2Briz8FLY6AOMwXPpEqdzHrZc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943732916945143251&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/d2a7e6bc47ddbee5b905f6737b6fafd5?fid=1565824282-250528-455106901933423&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8lC%2Briz8FLY6AOMwXPpEqdzHrZc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943732916945143251&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="2">
+</p>
+<p class="p indent">网络输入时原始图像，包含RGB三色的通道，以及一个binary的覆盖层，用于盖住需要填充的部分。论文中有提到因为作者不想修改原始图片的内容，所以对于没有被覆盖的部分，他们会直接采用原始图片中的像素进行填充。
+</p>
+<p class="p indent">除此之外，通过观察网络结构，我们可以看出这个网络前面若干层是对原始图像的encoding，在第二层以及第四层网络，通过2X2的stride降低分辨率，减少存储空间和计算时间。再通过一系列的convolution和dilated convolution调整后，结果通过deconvolution layer恢复到原始分辨率。在整个网络中，作者采用ReLU函数，在最后一层采用Sigmoid函数使得输出在0到1区间内。
+</p>
+<p class="p indent">作者在文章中提到两点注意事项，第一点是他们的网络模型仅仅降低了两次分辨率，使用大小为原始大小4分之一的卷积，其目的是为了降低最终图像的纹理模糊程度。
+</p>
+<p class="p indent">第二点就是他们使用了Multi-Scale Context Aggregation by Dilated Convolutions中提到的dilated convolutional layer。这种卷积形式中文被称作空洞卷积，能够通过相同数量的参数和计算能力感知每个像素周围更大的区域。在文章中，作者通过一张图给出说明，为了能够计算填充图像每一个像素的颜色，该像素需要知道周围图像的内容，采用空洞卷积能够帮助每一个点有效的“看到”比使用标准卷积更大的输入图像区域，从而填充图中点p2的颜色。对这一方面感兴趣的同学可以再阅读一下知乎上的问题“如何理解空洞卷积”。
+<img src="https://thumbnail0.baidupcs.com/thumbnail/486bd77e4df82bffa5ff9ee27bc1cdf6?fid=1565824282-250528-588930035273099&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-egyxTNPO3YAOpKBcqdgIkJoOKA4=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943754308764616556&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/486bd77e4df82bffa5ff9ee27bc1cdf6?fid=1565824282-250528-588930035273099&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-egyxTNPO3YAOpKBcqdgIkJoOKA4=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943754308764616556&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="3">
+在tensorflow当中，atrous_conv2d实现了所谓的dilated convolution，可以通过一段函数对他进行包装：
+<img src="https://thumbnail0.baidupcs.com/thumbnail/829df4e98410772f42ad6f2bd7029c7d?fid=1565824282-250528-320067993604137&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-1uexAO6ebIPSzMvgsLxKp3bm9ps=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943768138387800509&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/829df4e98410772f42ad6f2bd7029c7d?fid=1565824282-250528-320067993604137&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-1uexAO6ebIPSzMvgsLxKp3bm9ps=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943768138387800509&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="4">
+###<strong class="strong-star2">鉴别网络</strong>
+如上文所示，鉴别网络分为全局鉴别网络和局部鉴别网络两个部分。全局鉴别网络输入是256X256，RGB三通道图片，局部网络输入是128X128，RGB三通道图片，根据原始论文当中的设置，全局网络和局部网络都会通过5X5的convolution layer，以及2X2的stride降低分辨率，最终分别得到1024维向量。
+<img src="https://thumbnail0.baidupcs.com/thumbnail/6bbf31bcd828b490cbe3f6de6e763c7f?fid=1565824282-250528-1015085984311269&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-DvIuq3px%2bjiVsbkdARgXXX4yAuM=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943817431904010168&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/6bbf31bcd828b490cbe3f6de6e763c7f?fid=1565824282-250528-1015085984311269&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-DvIuq3px%2bjiVsbkdARgXXX4yAuM=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943817431904010168&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="5">
+然后，我们将全局和局部两个鉴别器输出连接成一个2048维向量，通过一个全连接然后用sigmoid函数得到整体图像一致性打分。
+我个人比较赞同他们这样打分系统的设计理念，但是再具体实现上持有一定怀疑态度。因为最终鉴别器是基于两部分鉴别器产生的中间结果，我个人感觉优化鉴别器并不等于同时优化了全局和局部鉴别器的一致性，不知道各位读者怎么看？
+###<strong class="strong-star2">训练过程</strong>
+训练图片填充所要优化的函数和上一篇文章“民科带你读文章: 用DCGAN补全图片”类似，除了要对GAN系统进行最大最小优化之外，我们需要同时考虑填充图像与真实图像误差。这里我们采用MSE(Mean Squared Error)作为对填充图像C(x)与真实图像x之间的误差衡量函数：
+<img src="https://thumbnail0.baidupcs.com/thumbnail/c77f979672eba17b7fe28898bdbbba2f?fid=1565824282-250528-130297542911542&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-LAlfJHt37zmoIc1xsHbP4QC9Edo=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943904712978683530&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/c77f979672eba17b7fe28898bdbbba2f?fid=1565824282-250528-130297542911542&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-LAlfJHt37zmoIc1xsHbP4QC9Edo=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943904712978683530&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="6">
+通过加权，我们可以合并MSE函数和对抗网络GAN的loss function：
+<img src="https://thumbnail0.baidupcs.com/thumbnail/baa650e875d5dea72d6d2f1e9b3635fb?fid=1565824282-250528-17019757907927&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-9lpSegqFvMdgDBF0x133gxNxJyU=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943915529551568105&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/baa650e875d5dea72d6d2f1e9b3635fb?fid=1565824282-250528-17019757907927&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-9lpSegqFvMdgDBF0x133gxNxJyU=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943915529551568105&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="7">
+</p>
+<p class="p indent">针对我在上一段提到的两个鉴别器的问题，这一张作者也有说到“As the optimization consists of jointly minimizing and maximizing conflicting objectives, it is not very stable.”
+</p>
+<p class="p indent">由于图像填充问题本来就是非常有挑战性的，所以训练过程需要非常小心。作者在这一张给出了如下图所示的训练过程，整个算法分为三个阶段：第一阶段(最初的Tc轮)主要优化completion network C；第二阶段(Tc~Tc+Td轮)主要优化discriminators D；最后在同时优化所有损失函数。
+</p>
+<p class="p indent">除了基本的深度学习以外，还通过传统的图像处理方法对生成图片边缘进行了修正，下图展示了修正带来的效果：
+<img src="https://thumbnail0.baidupcs.com/thumbnail/05106955e2943f5380cc8af4eee8277f?fid=1565824282-250528-579274633570615&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ex4FJEFU/JTdhzCe2e5qsrSHP28=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943941904674117037&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/05106955e2943f5380cc8af4eee8277f?fid=1565824282-250528-579274633570615&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ex4FJEFU/JTdhzCe2e5qsrSHP28=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943941904674117037&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="8">
+</p><h3 id="section" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">1.2</span>.&#8194;</span>解决复杂工程问题情况</h3>
+<p class="p noindent">由于这篇文章没有公开任何代码和训练模型，所以我不得不从头开始自己实现，过程中最大的挑战就是GAN自身的不稳定性。
+实现方面，因为有上一篇文章DCGAN开源的代码，所以我直接去修改了Discriminator和Generator。因为没有GPU，所以我采用64X64的人脸进行学习而非256X256的Place2数据集。
+识别部分分别鉴定两个区域的一致性。
+</p><h2 id="section" class="h1" data-heading-depth="1" style="display:block"><span class="heading-before"><a href="https://thumbnail0.baidupcs.com/thumbnail/d2a7e6bc47ddbee5b905f6737b6fafd5?fid=1565824282-250528-455106901933423&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8lC%2Briz8FLY6AOMwXPpEqdzHrZc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943732916945143251&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="2" class="heading-label">2</a>.&#8194;</span>存在问题与解决方案</h2><h3 id="section" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">2.1</span>.&#8194;</span>存在的主要问题</h3>
+<blockquote>
+
+<p class="p noindent">在我实现这篇文章中提到的算法时，遇到最大的问题就是GAN的不稳定性。起初，我设置的MSE权重比例太低，另外discriminator比generator训练速度快非常多，导致我的discriminator可以轻易的分辨出哪张是自然图像，哪张是生成图像，但是传递给generator的梯度只能使他生成奇怪的纹路：
+<img src="https://thumbnail0.baidupcs.com/thumbnail/838745512cddd3993d4bb5638d151967?fid=1565824282-250528-503905931492805&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-IAjLopp1hAOd9Q6uRcSf069CaMo=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943959125897208230&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/838745512cddd3993d4bb5638d151967?fid=1565824282-250528-503905931492805&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-IAjLopp1hAOd9Q6uRcSf069CaMo=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943959125897208230&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="9">
+在我调整了MSE权重后，目前可以生成人脸轮廓，但是只训练了300多轮，估计以我现在的CPU还要等好多天才行。
+<img src="https://thumbnail0.baidupcs.com/thumbnail/21cee61820637056a26ce24dab73c795?fid=1565824282-250528-757733312289113&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Fwm8B59JWCXcLrENygsfcdndeks=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943976430102002597&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/21cee61820637056a26ce24dab73c795?fid=1565824282-250528-757733312289113&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Fwm8B59JWCXcLrENygsfcdndeks=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943976430102002597&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="10">
+</p>
+<p class="p indent">另外一个训练中遇到的问题就是训练效率低下，在CPU上运行大约需要90秒才能完成64组图像的一轮训练。对比我上一篇文章提到的用DCGAN进行图片填充，我比较喜欢这篇文章对图像先进行encoding，在进行decoding的思路，基于这个思路，我又写了一个generator对模型进行了一定的退化。
+##解决方案与可行性研究
+</p></blockquote>
+<p class="p noindent">首先，先对原始人脸进行一定程度的降维，然后通过一个简单的全连接层，将人脸变为一个128维向量。在得到人脸的encoding结果后，采用原始DCGAN的思路生成新的图像，在生成过程中同时优化MSE和GAN损失函数。这样的生成网络进行在我的破电脑上运行一轮大约只要10秒钟。
+<img src="https://thumbnail0.baidupcs.com/thumbnail/5e7429456ef2686cdda803c5e6c291b3?fid=1565824282-250528-616499567934753&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nQO22rQoZKU6R72zli7aNPw3/uo=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1944010433813229494&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="此处输入图片的描述" data-path="https://thumbnail0.baidupcs.com/thumbnail/5e7429456ef2686cdda803c5e6c291b3?fid=1565824282-250528-616499567934753&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nQO22rQoZKU6R72zli7aNPw3/uo=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1944010433813229494&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="11">
+几千轮训练过后，我们生成的图像在一定程度上与原图相似，但是最终的64X64大小的像素是根据encoding后128维向量生成，边界非常不平滑，纹理也不清晰。也许我还是应该尝试将图片编码压缩为16X16，多通道参数，而非一维编码。
+</p><h2 id="section" class="h1" data-heading-depth="1" style="display:block"><span class="heading-before"><a href="https://thumbnail0.baidupcs.com/thumbnail/486bd77e4df82bffa5ff9ee27bc1cdf6?fid=1565824282-250528-588930035273099&amp;time=1521975600&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-egyxTNPO3YAOpKBcqdgIkJoOKA4=&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1943754308764616556&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" data-linkid="3" class="heading-label">3</a>.&#8194;</span>下一步计划</h2>
+<p class="p noindent">接下来我会继续调试现在的代码，然后研究一下如何稳定GAN的训练过程，也许应该看WGAN？针对图片补全这一个问题，我们回头看看传统的研究思路，能不能结合GAN得到提高。
+</p>
+<div class="logomadoko" style="display:block;text-align:right;font-size:xx-small;margin-top:4em">Created with&nbsp;<a href="https://www.madoko.net">Madoko.net</a>.</div><span data-line=""></span></div>
+</body>
+
+</html>
